@@ -1,5 +1,7 @@
 # go CalDAV
 
+Fork of https://github.com/samedi/caldav-go
+
 This is a Go lib that aims to implement the CalDAV specification ([RFC4791]). It allows the quick implementation of a CalDAV server in Go. Basically, it provides the request handlers that will handle the several CalDAV HTTP requests, fetch the appropriate resources, build and return the responses.
 
 ### How to install
@@ -10,14 +12,8 @@ go get github.com/neonxp/caldav-go
 
 ### Dependencies
 
-For dependency management, `glide` is used.
-
 ```bash
-# install glide (once!)
-curl https://glide.sh/get | sh
-
-# install dependencies
-glide install
+go mod download
 ```
 
 ### How to use it
