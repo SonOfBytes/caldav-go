@@ -1,11 +1,12 @@
 package data
 
 import (
-	"github.com/samedi/caldav-go/errs"
-	"github.com/samedi/caldav-go/files"
 	"io/ioutil"
 	"log"
 	"os"
+
+	"github.com/neonxp/caldav-go/errs"
+	"github.com/neonxp/caldav-go/files"
 )
 
 // Storage is the inteface responsible for the CRUD operations on the CalDAV resources. It represents
@@ -51,8 +52,7 @@ type Storage interface {
 // FileStorage is the storage that deals with resources as files in the file system. So, a collection resource
 // is treated as a folder/directory and its children resources are the files it contains. Non-collection resources are just plain files.
 // Each file represents then a CalAV resource and the data expects to contain the iCal data to feed the calendar events.
-type FileStorage struct {
-}
+type FileStorage struct{}
 
 // GetResources get the file resources based on the `rpath`. See `Storage.GetResources` doc.
 func (fs *FileStorage) GetResources(rpath string, withChildren bool) ([]Resource, error) {
@@ -89,7 +89,6 @@ func (fs *FileStorage) GetResourcesByFilters(rpath string, filters *ResourceFilt
 	childPaths := fs.getDirectoryChildPaths(rpath)
 	for _, path := range childPaths {
 		resource, _, err := fs.GetShallowResource(path)
-
 		if err != nil {
 			// if we can't find this resource, something weird went wrong, but not that serious, so we log it and continue
 			log.Printf("WARNING: returned error when trying to get resource with path %s from collection with path %s. Error: %s", path, rpath, err)
@@ -133,7 +132,6 @@ func (fs *FileStorage) GetResource(rpath string) (*Resource, bool, error) {
 // GetShallowResource fetches and returns a single resource file/directory without any related children. See `Storage.GetShallowResource` doc.
 func (fs *FileStorage) GetShallowResource(rpath string) (*Resource, bool, error) {
 	resources, err := fs.GetResources(rpath, false)
-
 	if err != nil {
 		return nil, false, err
 	}
@@ -201,7 +199,7 @@ func (fs *FileStorage) isResourcePresent(rpath string) bool {
 }
 
 func (fs *FileStorage) openResourceFile(filepath string, mode int) (*os.File, error) {
-	f, e := os.OpenFile(files.AbsPath(filepath), mode, 0666)
+	f, e := os.OpenFile(files.AbsPath(filepath), mode, 0o666)
 	if e != nil {
 		if os.IsNotExist(e) {
 			return nil, errs.ResourceNotFoundError

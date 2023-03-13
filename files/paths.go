@@ -1,9 +1,10 @@
 package files
 
 import (
-	"github.com/samedi/caldav-go/lib"
 	"path/filepath"
 	"strings"
+
+	"github.com/neonxp/caldav-go/lib"
 )
 
 const (

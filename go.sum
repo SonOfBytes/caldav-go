@@ -1,0 +1,5 @@
+github.com/beevik/etree v1.1.0/go.mod h1:r8Aw8JqVegEf0w2fDnATrX9VpkMcyFeM0FhwO62wh+A=
+github.com/neonxp/ical-go v0.0.0-20181107184520-7e5d6ade8eef h1:Zz6VuSCBGYe9NrDGw+guSe/8iyDuD4bOyJHXri1SiiA=
+github.com/neonxp/ical-go v0.0.0-20181107184520-7e5d6ade8eef/go.mod h1:81Iu4jTIKYWNClBWr4tMY04nt2zeiBIyMzTCzopqgmY=
+github.com/yosssi/gohtml v0.0.0-20201013000340-ee4748c638f4/go.mod h1:+ccdNT0xMY1dtc5XBxumbYfOUhmduiGudqaDgD2rVRE=
+golang.org/x/net v0.8.0/go.mod h1:QVkue5JL9kW//ek3r6jTKnTFis1tRmNAW2P1shuFdJc=

@@ -2,12 +2,13 @@ package data
 
 import (
 	"errors"
-	"github.com/beevik/etree"
 	"log"
 	"strings"
 	"time"
 
-	"github.com/samedi/caldav-go/lib"
+	"github.com/beevik/etree"
+
+	"github.com/neonxp/caldav-go/lib"
 )
 
 const (
@@ -79,7 +80,6 @@ func (f *ResourceFilter) Attr(attrName string) string {
 
 // TimeAttr searches and returns a filter attribute as a `time.Time` object.
 func (f *ResourceFilter) TimeAttr(attrName string) *time.Time {
-
 	t, err := time.Parse(FILTER_TIME_FORMAT, f.attrs[attrName])
 	if err != nil {
 		return nil

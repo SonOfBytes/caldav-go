@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/samedi/caldav-go/data"
-	"github.com/samedi/caldav-go/ixml"
+	"github.com/neonxp/caldav-go/data"
+	"github.com/neonxp/caldav-go/ixml"
 )
 
 type reportHandler struct {
@@ -103,7 +103,6 @@ func (rh reportHandler) fetchResourcesByFilters(origin *data.Resource, filtersXM
 	if origin.IsCollection() {
 		filters, _ := data.ParseResourceFilters(filtersXML.toString())
 		resources, err := rh.storage.GetResourcesByFilters(origin.Path, filters)
-
 		if err != nil {
 			return reps, err
 		}
@@ -131,7 +130,6 @@ func (rh reportHandler) fetchResourcesByList(origin *data.Resource, requestedPat
 
 	if origin.IsCollection() {
 		resources, err := rh.storage.GetResourcesByList(requestedPaths)
-
 		if err != nil {
 			return reps, err
 		}
