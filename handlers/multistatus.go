@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/neonxp/caldav-go/data"
-	"github.com/neonxp/caldav-go/global"
-	"github.com/neonxp/caldav-go/ixml"
-	"github.com/neonxp/caldav-go/lib"
+	"github.com/sonofbytes/caldav-go/data"
+	"github.com/sonofbytes/caldav-go/global"
+	"github.com/sonofbytes/caldav-go/ixml"
+	"github.com/sonofbytes/caldav-go/lib"
 )
 
 // Wraps a multistatus response. It contains the set of `Responses`

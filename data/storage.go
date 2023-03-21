@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/neonxp/caldav-go/errs"
-	"github.com/neonxp/caldav-go/files"
+	"github.com/sonofbytes/caldav-go/errs"
+	"github.com/sonofbytes/caldav-go/files"
 )
 
 // Storage is the inteface responsible for the CRUD operations on the CalDAV resources. It represents

@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/neonxp/caldav-go/ixml"
-	"github.com/neonxp/caldav-go/test"
+	"github.com/sonofbytes/caldav-go/ixml"
+	"github.com/sonofbytes/caldav-go/test"
 )
 
 // ============= TESTS ======================

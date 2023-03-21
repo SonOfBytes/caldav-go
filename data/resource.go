@@ -9,10 +9,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/neonxp/ical-go"
+	"github.com/sonofbytes/ical-go"
 
-	"github.com/neonxp/caldav-go/files"
-	"github.com/neonxp/caldav-go/lib"
+	"github.com/sonofbytes/caldav-go/files"
+	"github.com/sonofbytes/caldav-go/lib"
 )
 
 // ResourceInterface defines the main interface of a CalDAV resource object. This

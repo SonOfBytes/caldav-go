@@ -1,8 +1,8 @@
 package caldav
 
 import (
-	"github.com/neonxp/caldav-go/data"
-	"github.com/neonxp/caldav-go/global"
+	"github.com/sonofbytes/caldav-go/data"
+	"github.com/sonofbytes/caldav-go/global"
 )
 
 // SetupStorage sets the storage to be used by the server. The storage is where the resources data will be fetched from.

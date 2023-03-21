@@ -3,8 +3,8 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/neonxp/caldav-go/data"
-	"github.com/neonxp/caldav-go/global"
+	"github.com/sonofbytes/caldav-go/data"
+	"github.com/sonofbytes/caldav-go/global"
 )
 
 // HandlerInterface represents a CalDAV request handler. It has only one function `Handle`,

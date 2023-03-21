@@ -3,8 +3,8 @@ package caldav
 import (
 	"net/http"
 
-	"github.com/neonxp/caldav-go/data"
-	"github.com/neonxp/caldav-go/handlers"
+	"github.com/sonofbytes/caldav-go/data"
+	"github.com/sonofbytes/caldav-go/handlers"
 )
 
 // RequestHandler handles the given CALDAV request and writes the reponse righ away. This function is to be

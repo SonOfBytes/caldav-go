@@ -3,8 +3,8 @@
 package global
 
 import (
-	"github.com/neonxp/caldav-go/data"
-	"github.com/neonxp/caldav-go/lib"
+	"github.com/sonofbytes/caldav-go/data"
+	"github.com/sonofbytes/caldav-go/lib"
 )
 
 // Storage represents the global storage used in the CRUD operations of resources. Default storage is the `data.FileStorage`.

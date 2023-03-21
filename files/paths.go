@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/neonxp/caldav-go/lib"
+	"github.com/sonofbytes/caldav-go/lib"
 )
 
 const (

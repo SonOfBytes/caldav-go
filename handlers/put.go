@@ -3,7 +3,7 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/neonxp/caldav-go/errs"
+	"github.com/sonofbytes/caldav-go/errs"
 )
 
 type putHandler struct {
